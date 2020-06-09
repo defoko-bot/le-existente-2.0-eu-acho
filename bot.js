@@ -46,7 +46,7 @@ bot.on("message", (msg) => {
             console.log(`Monedita ${numerorandomae}`)
             const flipcoin = new MessageEmbed()
             .setTitle(`Monetita ao ar deu...`)
-            .attachFiles('./assets/moedita.gif')
+            .attachFiles('./assets/monedita.gif')
             .setImage('attachment://monedita.gif')
             .setDescription(`${moedaa}`)
             msg.channel.send(flipcoin)
