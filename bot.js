@@ -8,7 +8,7 @@ const cancelado = geral.cancelamentos
 
 bot.on("ready", () =>{
     console.log(`vivo caraio`)
-    bot.user.setActivity(`Existindo de novo [padero]`)
+    bot.user.setActivity(`Existindo de novo [le help] [-padero]`)
 })
 
 bot.on("rateLimit", (rt) => {
