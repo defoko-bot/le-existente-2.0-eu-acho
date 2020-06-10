@@ -53,7 +53,7 @@ bot.on("message", (msg) => {
             if(numerorandomae == 2) moedaa = "Coroa";
             console.log(`Monedita ${numerorandomae}`)
             const moneditaColor = Math.floor(Math.random()*16777215).toString(16);
-            const flipcoin = new msgEmbed()
+            const flipcoin = new MessageEmbed()
             .setColor(`#${moneditaColor}`)
             .setTitle(`Monetita ao ar deu...`)
             .attachFiles('./assets/moedita.gif')
