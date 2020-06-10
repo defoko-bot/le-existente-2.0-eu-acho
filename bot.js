@@ -96,7 +96,7 @@ bot.on("message", (msg) => {
             const helpColor = Math.floor(Math.random()*16777215).toString(16);
             const helpembed = new MessageEmbed()
             .setTitle(`Ajuda`)
-            .setDescription(`Prefixo: \`le \` (com espaço tipo le help)\n\nle sabiaspalavras - aummmmmmmmmmmmm :person_in_lotus_position:\nle dado <numero 1-100> - rola um dado\nle monedita - cara ou coroa\nle cancelar <pessoa marcada> - cancela ela que nem esses retardados no twitter com um motivo aleatorio\nle ppt <pedra/papel/tesoura> - o classico pedra papel tesoura\n\nadc ae mermão: https://discord.com/api/oauth2/authorize?client_id=716473594447659099&permissions=51200&scope=bot\nRepo do github: https://github.com/defoko-bot/le-existente-2.0-eu-acho\n\n-padero [pessoa#9583]`)
+            .setDescription(`Prefixo: \`le \` (com espaço tipo le help)\n\nle sabiaspalavras - aummmmmmmmmmmmm :person_in_lotus_position: ${sabio.length} sabias palavras unicas\nle dado <numero 1-100> - rola um dado\nle monedita - cara ou coroa\nle cancelar <pessoa marcada> - cancela ela que nem esses retardados no twitter com um motivo aleatorio\nle ppt <pedra/papel/tesoura> - o classico pedra papel tesoura\n\nadc ae mermão: https://discord.com/api/oauth2/authorize?client_id=716473594447659099&permissions=51200&scope=bot\nRepo do github: https://github.com/defoko-bot/le-existente-2.0-eu-acho\n\n-padero [pessoa#9583]`)
             .setColor(`#${helpColor}`)
             .setTimestamp();
             msg.channel.send(helpembed)
