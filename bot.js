@@ -29,7 +29,9 @@ bot.on("message", (msg) => {
         case "sabiaspalavras": //fala um comando foda ae to sem ideia
             const wrdrandom = sabio[Math.floor(Math.random() * sabio.length)]
             console.log(`Sabia palavra invocada: ${wrdrandom}, pos na lista: ${sabio.indexOf(wrdrandom)}`)
+            const sbColor = Math.floor(Math.random()*16777215).toString(16);
             const wrdembed = new MessageEmbed()
+            .setColor(`#${sbColor}`)
             .setTitle(`Sua palavra sagrada éééé...`)
             .setDescription(`${wrdrandom}`);
             msg.channel.send(wrdembed)
