@@ -38,8 +38,7 @@ bot.on("message", (msg) => {
         break;
         case "dado":
             const numero = args[1]
-            if(!numero || isNaN(numero)) return msg.channel.send(`${msg.author} numero invalido carai`)
-            if(numero == 0) return msg.channel.send(`${msg.author} numero nulo`)
+            if(!numero || isNaN(numero) || numero <= 0) return msg.channel.send(`${msg.author} numero invalido carai`)
             if(numero > 100) return msg.channel.send(`${msg.author} numero mto grande, pf apenas entre 0 e 100`)
             const random = Math.floor(Math.random() * numero);
             console.log(`Dado invocado: ${random}`)
